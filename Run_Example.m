@@ -7,7 +7,7 @@ clc
 % Note (!!!) unlike ultrasound, here x is azimuth, y is depth and z is (out of plane) elevation
 % Grid parameters
 Grid.Size     = [246;300];                       % grid size is 246 by 300 pixels
-Grid.Res      = 120e-6*[1;1];                    % resolution is 100 micron in both axes
+Grid.Res      = 120e-6*[1;1];                    % resolution is 120 micron in both axes
 Grid.BLCorner = [-Grid.Size(1)/2*Grid.Res(1);0]; % Bottom left corner is at y=0 and x is centered around the middle
 Grid.dt       = 1/20e6;                          % 20 MHz sampling rate
 Grid.tBounds  = [1; 1024];                       % use sampels #1 to #1024
